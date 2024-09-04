@@ -219,9 +219,8 @@ zsh disable_visualize.sh
 
 ### Demo
 
-the original video is downloaded from [KIT Motions](https://motion-database.humanoids.kit.edu/details/motions/3130/?listpage=3) and the processed video of SMPL-X are showed below:
-
-<video src="workspace/scripts/sweep.mp4"></video>
+the original video is downloaded from [KIT Motions](https://motion-database.humanoids.kit.edu/details/motions/3130/?listpage=3) and the processed video of SMPL-X are showed at:
+`workspace/scripts/sweep.mp4`
 
 # Note:
 
