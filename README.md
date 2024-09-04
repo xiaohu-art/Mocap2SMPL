@@ -2,7 +2,11 @@
 
 The primary purpose of this project is to fit .c3d file into a SMPL-X model. 
 
-Based on the statement and link in [AMASS dataset](https://github.com/nghorbani/amass):![image-20240904110915235](C:\Users\PassingBy_Cao\AppData\Roaming\Typora\typora-user-images\image-20240904110915235.png)
+Based on the statement and link in [AMASS dataset](https://github.com/nghorbani/amass):
+
+```bash
+AMASS uses MoSh++ pipeline to fit SMPL+H body model to human optical marker based motion capture (mocap) data. In the paper we use SMPL+H with extended shape space, i.e. 16 betas, and 8 DMPLs. Please download models and place them them in body_models folder of this repository after you obtained the code from GitHub.
+```
 
 I ended up with [SOMA](https://github.com/nghorbani/soma). However, the whole process of environment configuration is vague and full of outdated information.
 
@@ -198,6 +202,14 @@ Here in `workspace/scripts/mocap2smpl.py` you should change the `soma_mocap_targ
 Detailly:
 
 + I implemented `gen_stagei_mocap_fnames_customized` in `soma.run_soma.paper_plots.mosh_soma_dataset`
+
++ ```python
+  write_mocap_c3d(out_mocap_fname=c3d_out_fname,
+                        markers=results['markers'],
+                        labels=nan_replaced_labels,
+                        frame_rate=soma_labeler.mocap_frame_rate)
+  ```
+  in `soma_processor.py--line 451`
 
 + add
 

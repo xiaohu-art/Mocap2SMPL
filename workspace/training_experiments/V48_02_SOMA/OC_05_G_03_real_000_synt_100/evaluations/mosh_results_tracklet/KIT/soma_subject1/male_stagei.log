@@ -1,0 +1,60 @@
+mosh_head:prepare_stagei_frames:158 -- DEBUG -- Selecting 1 frames using method manual on frames with 100% least_avail_markers
+mosh_head:prepare_stagei_frames:198 -- DEBUG -- Using frames for stage-i: ['/home/ubuntu/Desktop/Mocap2SMPL/workspace/training_experiments/V48_02_SOMA/OC_05_G_03_real_000_synt_100/evaluations/soma_labeled_mocap_tracklet/KIT/soma_subject1/sweep.pkl_000001']
+mosh_head:mosh_stagei:231 -- DEBUG -- Marker layout not available. It will be produced: /home/ubuntu/Desktop/Mocap2SMPL/workspace/training_experiments/V48_02_SOMA/OC_05_G_03_real_000_synt_100/evaluations/mosh_results_tracklet/KIT/KIT_smplx.json
+create_marker_layout_for_mocaps:marker_labels_to_marker_layout:68 -- DEBUG -- Preparing marker layout for surface_model_type: smplx
+create_marker_layout_for_mocaps:marker_labels_to_marker_layout:94 -- ERROR -- Unknown marker label(s) for surface_model_type smplx skipped: ['nan'].
+create_marker_layout_for_mocaps:marker_labels_to_marker_layout:106 -- DEBUG -- has_face: True, has_finger: True, has_body: True, wrist_markers_on_stick: False
+create_marker_layout_for_mocaps:marker_labels_to_marker_layout:130 -- INFO -- Created marker layout: /home/ubuntu/Desktop/Mocap2SMPL/workspace/training_experiments/V48_02_SOMA/OC_05_G_03_real_000_synt_100/evaluations/mosh_results_tracklet/KIT/KIT_smplx.json
+mosh_head:mosh_stagei:241 -- INFO -- Attempting mosh stagei to create /home/ubuntu/Desktop/Mocap2SMPL/workspace/training_experiments/V48_02_SOMA/OC_05_G_03_real_000_synt_100/evaluations/mosh_results_tracklet/KIT/soma_subject1/male_stagei.pkl
+chmosh:mosh_stagei:120 -- INFO -- using marker_layout_fname: /home/ubuntu/Desktop/Mocap2SMPL/workspace/training_experiments/V48_02_SOMA/OC_05_G_03_real_000_synt_100/evaluations/mosh_results_tracklet/KIT/KIT_smplx.json
+edit_tools:marker_layout_load:130 -- INFO -- Loading marker layout: /home/ubuntu/Desktop/Mocap2SMPL/workspace/training_experiments/V48_02_SOMA/OC_05_G_03_real_000_synt_100/evaluations/mosh_results_tracklet/KIT/KIT_smplx.json
+edit_tools:marker_layout_load:134 -- INFO -- Available marker types: {'body': 45}. Total: 45 markers.
+chmosh:mosh_stagei:132 -- WARNING -- optimize_fingers was activated but no finger marker type detected in the marker layout: optimize_fingers = False.
+bodymodel_loader:load_moshpp_models:93 -- INFO -- Loading model: /home/ubuntu/Desktop/Mocap2SMPL/workspace/support_files/smplx/male/model.pkl
+chmosh:mosh_stagei:160 -- DEBUG -- can_model.betas.shape: (400,)
+chmosh:mosh_stagei:161 -- DEBUG -- opt_models[0].betas.shape: (400,)
+chmosh:mosh_stagei:180 -- DEBUG -- Estimating for #latent markers: 45
+chmosh:mosh_stagei:217 -- DEBUG -- Number of available markers in each stagei selected frames: (F00, 45)
+chmosh:mosh_stagei:225 -- DEBUG -- Rigidly aligning the body to the markers
+chmosh:mosh_stagei:250 -- DEBUG -- MoSh stagei weights before annealing:
+stagei_wt_poseH: 3.0
+stagei_wt_poseF: 3.0
+stagei_wt_expr: 34.0
+stagei_wt_pose: 3.0
+stagei_wt_poseB: 3.0
+stagei_wt_init_finger_left: 400.0
+stagei_wt_init_finger_right: 400.0
+stagei_wt_init_finger: 400.0
+stagei_wt_betas: 10.0
+stagei_wt_init: 300
+stagei_wt_data: 75.0
+stagei_wt_surf: 10000.0
+stagei_wt_annealing: [1.0, 0.5, 0.25, 0.125]
+chmosh:mosh_stagei:254 -- DEBUG -- head_marker_corr_fname is provided and is being loaded: /home/ubuntu/Desktop/Mocap2SMPL/workspace/support_files/ssm_head_marker_corr.npz
+chmosh:mosh_stagei:262 -- INFO -- Successfully took into account the correlation of the head markers
+chmosh:mosh_stagei:268 -- DEBUG -- Beginning mosh stagei with opt_settings.weights_type: smplx
+chmosh:mosh_stagei:342 -- DEBUG -- Step 1/4 : Opt. wt_anneal_factor = 1.00, wt_data = 1.00, wt_poseB = 76.67
+chmosh:mosh_stagei:344 -- DEBUG -- stagei_wt_init for different marker types body = 300.00: 
+chmosh:mosh_stagei:409 -- DEBUG -- Init. loss values: beta = 0.00e+00 | data = 9.68e+04 | init_body = 7.32e-27 | init_head_corr = 5.67e-28 | poseB = 2.05e+03 | surf = 1.02e+01
+chmosh:mosh_stagei:417 -- DEBUG -- Final loss values: beta = 2.44e+01 | data = 5.85e+02 | init_body = 3.06e+01 | init_head_corr = 1.69e-01 | poseB = 8.06e+02 | surf = 2.87e-02
+chmosh:mosh_stagei:342 -- DEBUG -- Step 2/4 : Opt. wt_anneal_factor = 0.50, wt_data = 0.50, wt_poseB = 153.33
+chmosh:mosh_stagei:344 -- DEBUG -- stagei_wt_init for different marker types body = 150.00: 
+chmosh:mosh_stagei:409 -- DEBUG -- Init. loss values: beta = 6.09e+00 | data = 2.34e+03 | init_body = 7.64e+00 | init_head_corr = 4.22e-02 | poseB = 2.01e+02 | surf = 2.87e-02
+chmosh:mosh_stagei:417 -- DEBUG -- Final loss values: beta = 4.14e+01 | data = 6.31e+02 | init_body = 5.09e+02 | init_head_corr = 3.99e+00 | poseB = 2.39e+02 | surf = 2.44e+00
+chmosh:mosh_stagei:342 -- DEBUG -- Step 3/4 : Opt. wt_anneal_factor = 0.25, wt_data = 0.25, wt_poseB = 306.67
+chmosh:mosh_stagei:344 -- DEBUG -- stagei_wt_init for different marker types body = 75.00: 
+chmosh:mosh_stagei:409 -- DEBUG -- Init. loss values: beta = 1.03e+01 | data = 2.52e+03 | init_body = 1.27e+02 | init_head_corr = 9.98e-01 | poseB = 5.98e+01 | surf = 2.44e+00
+chmosh:mosh_stagei:417 -- DEBUG -- Final loss values: beta = 4.46e+01 | data = 1.57e+02 | init_body = 4.29e+02 | init_head_corr = 9.77e+00 | poseB = 8.27e+01 | surf = 3.62e-01
+chmosh:mosh_stagei:342 -- DEBUG -- Step 4/4 : Opt. wt_anneal_factor = 0.12, wt_data = 0.12, wt_poseB = 613.33
+chmosh:mosh_stagei:344 -- DEBUG -- stagei_wt_init for different marker types body = 37.50: 
+chmosh:mosh_stagei:409 -- DEBUG -- Init. loss values: beta = 1.11e+01 | data = 6.28e+02 | init_body = 1.07e+02 | init_head_corr = 2.44e+00 | poseB = 2.07e+01 | surf = 3.62e-01
+chmosh:mosh_stagei:417 -- DEBUG -- Final loss values: beta = 1.55e+01 | data = 5.01e+02 | init_body = 1.14e+02 | init_head_corr = 2.74e+00 | poseB = 2.23e+01 | surf = 1.82e+00
+mosh_head:mosh_stagei:258 -- DEBUG -- created stagei_fname: /home/ubuntu/Desktop/Mocap2SMPL/workspace/training_experiments/V48_02_SOMA/OC_05_G_03_real_000_synt_100/evaluations/mosh_results_tracklet/KIT/soma_subject1/male_stagei.pkl
+mosh_head:mosh_stagei:260 -- DEBUG -- finished mosh stagei in 0:00:40.981422
+edit_tools:marker_layout_load:130 -- INFO -- Loading marker layout: /home/ubuntu/Desktop/Mocap2SMPL/workspace/training_experiments/V48_02_SOMA/OC_05_G_03_real_000_synt_100/evaluations/mosh_results_tracklet/KIT/soma_subject1/male_stagei.json
+edit_tools:marker_layout_load:134 -- INFO -- Available marker types: {'body': 45}. Total: 45 markers.
+edit_tools:marker_layout_load:130 -- INFO -- Loading marker layout: /home/ubuntu/Desktop/Mocap2SMPL/workspace/training_experiments/V48_02_SOMA/OC_05_G_03_real_000_synt_100/evaluations/mosh_results_tracklet/KIT/soma_subject1/male_stagei.json
+edit_tools:marker_layout_load:134 -- INFO -- Available marker types: {'body': 45}. Total: 45 markers.
+mosh_head:dump_stagei_marker_layout:339 -- INFO -- created /home/ubuntu/Desktop/Mocap2SMPL/workspace/training_experiments/V48_02_SOMA/OC_05_G_03_real_000_synt_100/evaluations/mosh_results_tracklet/KIT/soma_subject1/male_stagei.json
+mosh_head:dump_stagei_marker_layout:340 -- INFO -- created /home/ubuntu/Desktop/Mocap2SMPL/workspace/training_experiments/V48_02_SOMA/OC_05_G_03_real_000_synt_100/evaluations/mosh_results_tracklet/KIT/soma_subject1/male_stagei.ply
+mosh_head:dump_stagei_marker_layout:341 -- INFO -- created /home/ubuntu/Desktop/Mocap2SMPL/workspace/training_experiments/V48_02_SOMA/OC_05_G_03_real_000_synt_100/evaluations/mosh_results_tracklet/KIT/soma_subject1/male_stagei.c3d
