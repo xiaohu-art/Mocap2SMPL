@@ -7,7 +7,7 @@ from soma.train.train_soma_multiple import train_multiple_soma
 soma_expr_id = 'V48_02_SOMA'
 
 soma_data_settings = [(5, 3, 0.0, 1.0), ] # upto 5 occlusions, upto 3 ghost points, 0.0% real data, 100. % synthetic data
-soma_work_base_dir = '/home/ubuntu/Desktop/test/workspace'
+soma_work_base_dir = '/home/ubuntu/Desktop/Mocap2SMPL/workspace'
 support_base_dir = osp.join(soma_work_base_dir, 'support_files')
 soma_marker_layout_fname = osp.join(support_base_dir, 'marker_layouts/SOMA/soma_subject1/clap_001.c3d')
 
