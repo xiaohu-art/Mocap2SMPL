@@ -1,0 +1,21 @@
+soma_processor:__init__:98 -- V48_02_SOMA -- OC_05_G_03_real_000_synt_100 -- KIT -- soma_subject1 -- sweep -- Starting SOMA on /home/ubuntu/Desktop/MoCap2SMPL/m2s/support_files/evaluation_mocaps/original/KIT/soma_subject1/sweep.c3d
+edit_tools:marker_layout_load:130 -- V48_02_SOMA -- OC_05_G_03_real_000_synt_100 -- KIT -- soma_subject1 -- sweep -- Loading marker layout: /home/ubuntu/Desktop/MoCap2SMPL/m2s/data/V48_01_SOMA/marker_dataset/superset.json
+edit_tools:marker_layout_load:134 -- V48_02_SOMA -- OC_05_G_03_real_000_synt_100 -- KIT -- soma_subject1 -- sweep -- Available marker types: {'body': 53}. Total: 53 markers.
+model_loader:load_model:97 -- V48_02_SOMA -- OC_05_G_03_real_000_synt_100 -- KIT -- soma_subject1 -- sweep -- Loaded model in eval mode with trained weights: /home/ubuntu/Desktop/MoCap2SMPL/m2s/training_experiments/V48_02_SOMA/OC_05_G_03_real_000_synt_100/snapshots/V48_02_SOMA_epoch=41_val_f1=1.00_val_acc=1.00.ckpt
+soma_processor:__init__:148 -- V48_02_SOMA -- OC_05_G_03_real_000_synt_100 -- KIT -- soma_subject1 -- sweep -- loaded mocap points. #markers.shape = (1455, 53, 3), frame_rate: 100.0 and available points 100.00%
+soma_processor:__init__:150 -- V48_02_SOMA -- OC_05_G_03_real_000_synt_100 -- KIT -- soma_subject1 -- sweep -- Maximum number of non-zero points per-frame: 53
+edit_tools:marker_layout_load:130 -- V48_02_SOMA -- OC_05_G_03_real_000_synt_100 -- KIT -- soma_subject1 -- sweep -- Loading marker layout: /home/ubuntu/Desktop/MoCap2SMPL/m2s/data/V48_01_SOMA/marker_dataset/superset.json
+edit_tools:marker_layout_load:134 -- V48_02_SOMA -- OC_05_G_03_real_000_synt_100 -- KIT -- soma_subject1 -- sweep -- Available marker types: {'body': 53}. Total: 53 markers.
+soma_processor:__init__:159 -- V48_02_SOMA -- OC_05_G_03_real_000_synt_100 -- KIT -- soma_subject1 -- sweep -- SOMA is trained for #53 markers of layout: /home/ubuntu/Desktop/MoCap2SMPL/m2s/data/V48_01_SOMA/marker_dataset/superset.json
+soma_processor:apply_soma:197 -- V48_02_SOMA -- OC_05_G_03_real_000_synt_100 -- KIT -- soma_subject1 -- sweep -- Applying SOMA on mocap with batch_size = 512
+soma_processor:apply_soma:234 -- V48_02_SOMA -- OC_05_G_03_real_000_synt_100 -- KIT -- soma_subject1 -- sweep -- SOMA was performing at inf Hz.
+soma_processor:label_tracklets:388 -- V48_02_SOMA -- OC_05_G_03_real_000_synt_100 -- KIT -- soma_subject1 -- sweep -- 61 labels detected
+soma_processor:label_tracklets:395 -- V48_02_SOMA -- OC_05_G_03_real_000_synt_100 -- KIT -- soma_subject1 -- sweep -- Tracklet labeling yielded 86.89% non-zero mocap.
+soma_processor:run_soma_once:446 -- V48_02_SOMA -- OC_05_G_03_real_000_synt_100 -- KIT -- soma_subject1 -- sweep -- Created /home/ubuntu/Desktop/MoCap2SMPL/m2s/training_experiments/V48_02_SOMA/OC_05_G_03_real_000_synt_100/evaluations/soma_labeled_mocap_tracklet/KIT/soma_subject1/sweep.pkl
+soma_processor:run_soma_once:455 -- V48_02_SOMA -- OC_05_G_03_real_000_synt_100 -- KIT -- soma_subject1 -- sweep -- Created /home/ubuntu/Desktop/MoCap2SMPL/m2s/training_experiments/V48_02_SOMA/OC_05_G_03_real_000_synt_100/evaluations/soma_labeled_mocap_tracklet/KIT/soma_subject1/sweep.c3d
+soma_processor:run_soma_once:457 -- V48_02_SOMA -- OC_05_G_03_real_000_synt_100 -- KIT -- soma_subject1 -- sweep -- ----------------
+run_soma_multiple:run_soma_on_multiple_settings:252 -- V48_02_SOMA -- OC_05_G_03_real_000_synt_100 -- KIT -- soma_subject1 -- sweep -- Submitting MoSh++ jobs.
+run_soma_multiple:run_soma_on_multiple_settings:252 -- V48_02_SOMA -- OC_05_G_03_real_000_synt_100 -- KIT -- soma_subject1 -- sweep -- Submitting MoSh++ jobs.
+parallel_tools:run_parallel_jobs:54 -- V48_02_SOMA -- OC_05_G_03_real_000_synt_100 -- KIT -- soma_subject1 -- sweep -- #Job(s) submitted: 1
+parallel_tools:run_parallel_jobs:58 -- V48_02_SOMA -- OC_05_G_03_real_000_synt_100 -- KIT -- soma_subject1 -- sweep -- max_num_jobs is set to 1. choosing the first #Job(s): 1
+parallel_tools:run_parallel_jobs:67 -- V48_02_SOMA -- OC_05_G_03_real_000_synt_100 -- KIT -- soma_subject1 -- sweep -- Will run the jobs in random order.

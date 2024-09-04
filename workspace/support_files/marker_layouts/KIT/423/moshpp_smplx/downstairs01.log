@@ -1,0 +1,136 @@
+423 -- downstairs01 -- mosh_head:__init__:82 -- mocap_fname: /ps/scratch/soma/single_labeled_frame/KIT/423/downstairs01.c3d
+423 -- downstairs01 -- mosh_head:__init__:84 -- stagei_fname: /ps/scratch/soma/single_labeled_frame/KIT/423/moshpp_smplx/downstairs01_stagei.pkl
+423 -- downstairs01 -- mosh_head:__init__:85 -- stageii_fname: None
+423 -- downstairs01 -- mosh_head:__init__:82 -- mocap_fname: /ps/scratch/soma/single_labeled_frame/KIT/423/downstairs01.c3d
+423 -- downstairs01 -- mosh_head:__init__:84 -- stagei_fname: /ps/scratch/soma/single_labeled_frame/KIT/423/moshpp_smplx/downstairs01_stagei.pkl
+423 -- downstairs01 -- mosh_head:__init__:85 -- stageii_fname: None
+423 -- downstairs01 -- mosh_head:__init__:90 -- surface_model_type: smplx
+423 -- downstairs01 -- mosh_head:__init__:91 -- gender: neutral
+423 -- downstairs01 -- mosh_head:__init__:92 -- surface_model_fname: /ps/project/soma/support_files/release_soma/smplx/neutral/model.pkl
+423 -- downstairs01 -- mosh_head:__init__:95 -- optimize_fingers: False, optimize_face: False, optimize_toes: False, optimize_betas: True, optimize_dynamics: False
+423 -- downstairs01 -- mosh_head:__init__:82 -- mocap_fname: /ps/scratch/soma/single_labeled_frame/KIT/423/downstairs01.c3d
+423 -- downstairs01 -- mosh_head:__init__:84 -- stagei_fname: /ps/scratch/soma/single_labeled_frame/KIT/423/moshpp_smplx/downstairs01_stagei.pkl
+423 -- downstairs01 -- mosh_head:__init__:85 -- stageii_fname: None
+423 -- downstairs01 -- mosh_head:__init__:90 -- surface_model_type: smplx
+423 -- downstairs01 -- mosh_head:__init__:91 -- gender: neutral
+423 -- downstairs01 -- mosh_head:__init__:92 -- surface_model_fname: /ps/project/soma/support_files/release_soma/smplx/neutral/model.pkl
+423 -- downstairs01 -- mosh_head:__init__:95 -- optimize_fingers: False, optimize_face: False, optimize_toes: False, optimize_betas: True, optimize_dynamics: False
+423 -- downstairs01 -- mosh_head:mosh_stagei:191 -- Marker layout not available. It will be produced ...
+423 -- downstairs01 -- create_marker_layout_for_mocaps:marker_labels_to_marker_layout:29 -- Preparing marker layout for surface_model_type: smplx
+423 -- downstairs01 -- create_marker_layout_for_mocaps:marker_labels_to_marker_layout:62 -- has_face: True, has_finger: True, has_body: True, wrist_markers_on_stick: False
+423 -- downstairs01 -- create_marker_layout_for_mocaps:marker_labels_to_marker_layout:84 -- Created marker layout: /ps/scratch/soma/single_labeled_frame/KIT/423/moshpp_smplx/downstairs01.json
+423 -- downstairs01 -- mosh_head:mosh_stagei:199 -- Attempting mosh stagei to create /ps/scratch/soma/single_labeled_frame/KIT/423/moshpp_smplx/downstairs01_stagei.pkl
+423 -- downstairs01 -- chmosh:mosh_stagei:154 -- Estimating for #latent markers: 48
+423 -- downstairs01 -- chmosh:mosh_stagei:191 -- Number of  available markers in each stagei selected frames: (F00, 48), (F01, 48), (F02, 48), (F03, 48), (F04, 48), (F05, 48), (F06, 48), (F07, 48), (F08, 48), (F09, 48), (F10, 48), (F11, 48)
+423 -- downstairs01 -- chmosh:mosh_stagei:195 -- Rigidly aligning the body to the markers
+423 -- downstairs01 -- chmosh:mosh_stagei:219 -- MoSh stagei weights before annealing:
+stagei_wt_poseH: 3.0
+stagei_wt_poseF: 3.0
+stagei_wt_expr: 34.0
+stagei_wt_pose: 3.0
+stagei_wt_poseB: 3.0
+stagei_wt_betas: 10.0
+stagei_wt_init: 300
+stagei_wt_data: 75.0
+stagei_wt_surf: 10000.0
+stagei_wt_annealing: [1.0, 0.5, 0.25, 0.125]
+423 -- downstairs01 -- chmosh:mosh_stagei:223 -- head_marker_corr_fname is provided and is being loaded.
+423 -- downstairs01 -- chmosh:mosh_stagei:231 -- Taking into account the correlation of the head markers from head_marker_corr_fname = /ps/project/soma/support_files/release_soma/ssm_head_marker_corr.npz
+423 -- downstairs01 -- chmosh:mosh_stagei:237 -- Beginning mosh stagei
+423 -- downstairs01 -- chmosh:mosh_stagei:302 -- Step 1/4 : Opt. wt_anneal_factor = 1.00, wt_data = 1.00, wt_poseB = 71.88
+423 -- downstairs01 -- chmosh:mosh_stagei:304 -- stagei_wt_init for different marker types body = 300.00: 
+423 -- downstairs01 -- chmosh:mosh_stagei:306 -- stagei_wt_surf for different marker types body = 10000.00
+423 -- downstairs01 -- chmosh:mosh_stagei:358 -- Init. loss values: beta = 0.00e+00 | data = 1.03e+06 | init_body = 1.53e-26 | init_head_corr = 8.87e-28 | poseB = 2.46e+04 | surf_body = 4.59e+01
+423 -- downstairs01 -- mosh_head:__init__:82 -- mocap_fname: /ps/scratch/soma/single_labeled_frame/KIT/423/downstairs01.c3d
+423 -- downstairs01 -- mosh_head:__init__:84 -- stagei_fname: /ps/scratch/soma/single_labeled_frame/KIT/423/moshpp_smplx/downstairs01_stagei.pkl
+423 -- downstairs01 -- mosh_head:__init__:85 -- stageii_fname: None
+423 -- downstairs01 -- mosh_head:__init__:90 -- surface_model_type: smplx
+423 -- downstairs01 -- mosh_head:__init__:91 -- gender: neutral
+423 -- downstairs01 -- mosh_head:__init__:92 -- surface_model_fname: /ps/project/soma/support_files/release_soma/smplx/neutral/model.pkl
+423 -- downstairs01 -- mosh_head:__init__:95 -- optimize_fingers: False, optimize_face: False, optimize_toes: False, optimize_betas: True, optimize_dynamics: False
+423 -- downstairs01 -- mosh_head:mosh_stagei:199 -- Attempting mosh stagei to create /ps/scratch/soma/single_labeled_frame/KIT/423/moshpp_smplx/downstairs01_stagei.pkl
+423 -- downstairs01 -- chmosh:mosh_stagei:154 -- Estimating for #latent markers: 48
+423 -- downstairs01 -- chmosh:mosh_stagei:191 -- Number of  available markers in each stagei selected frames: (F00, 48), (F01, 48), (F02, 48), (F03, 48), (F04, 48), (F05, 48), (F06, 48), (F07, 48), (F08, 48), (F09, 48), (F10, 48), (F11, 48)
+423 -- downstairs01 -- chmosh:mosh_stagei:195 -- Rigidly aligning the body to the markers
+423 -- downstairs01 -- chmosh:mosh_stagei:219 -- MoSh stagei weights before annealing:
+stagei_wt_poseH: 3.0
+stagei_wt_poseF: 3.0
+stagei_wt_expr: 34.0
+stagei_wt_pose: 3.0
+stagei_wt_poseB: 3.0
+stagei_wt_betas: 10.0
+stagei_wt_init: 300
+stagei_wt_data: 75.0
+stagei_wt_surf: 10000.0
+stagei_wt_annealing: [1.0, 0.5, 0.25, 0.125]
+423 -- downstairs01 -- chmosh:mosh_stagei:223 -- head_marker_corr_fname is provided and is being loaded.
+423 -- downstairs01 -- chmosh:mosh_stagei:231 -- Taking into account the correlation of the head markers from head_marker_corr_fname = /ps/project/soma/support_files/release_soma/ssm_head_marker_corr.npz
+423 -- downstairs01 -- chmosh:mosh_stagei:237 -- Beginning mosh stagei
+423 -- downstairs01 -- chmosh:mosh_stagei:302 -- Step 1/4 : Opt. wt_anneal_factor = 1.00, wt_data = 1.00, wt_poseB = 71.88
+423 -- downstairs01 -- chmosh:mosh_stagei:304 -- stagei_wt_init for different marker types body = 300.00: 
+423 -- downstairs01 -- chmosh:mosh_stagei:306 -- stagei_wt_surf for different marker types body = 10000.00
+423 -- downstairs01 -- chmosh:mosh_stagei:358 -- Init. loss values: beta = 0.00e+00 | data = 1.03e+06 | init_body = 1.53e-26 | init_head_corr = 8.87e-28 | poseB = 2.46e+04 | surf_body = 4.59e+01
+423 -- downstairs01 -- chmosh:mosh_stagei:366 -- Final loss values: beta = 3.89e+02 | data = 3.61e+03 | init_body = 2.05e+03 | init_head_corr = 4.02e+01 | poseB = 9.97e+03 | surf_body = 3.78e-01
+423 -- downstairs01 -- chmosh:mosh_stagei:302 -- Step 2/4 : Opt. wt_anneal_factor = 0.50, wt_data = 0.50, wt_poseB = 143.75
+423 -- downstairs01 -- chmosh:mosh_stagei:304 -- stagei_wt_init for different marker types body = 150.00: 
+423 -- downstairs01 -- chmosh:mosh_stagei:306 -- stagei_wt_surf for different marker types body = 10000.00
+423 -- downstairs01 -- chmosh:mosh_stagei:358 -- Init. loss values: beta = 9.73e+01 | data = 1.44e+04 | init_body = 5.13e+02 | init_head_corr = 1.00e+01 | poseB = 2.49e+03 | surf_body = 3.78e-01
+423 -- downstairs01 -- chmosh:mosh_stagei:366 -- Final loss values: beta = 3.13e+02 | data = 5.64e+02 | init_body = 2.58e+03 | init_head_corr = 6.53e+01 | poseB = 2.61e+03 | surf_body = 1.14e+00
+423 -- downstairs01 -- chmosh:mosh_stagei:302 -- Step 3/4 : Opt. wt_anneal_factor = 0.25, wt_data = 0.25, wt_poseB = 287.50
+423 -- downstairs01 -- chmosh:mosh_stagei:304 -- stagei_wt_init for different marker types body = 75.00: 
+423 -- downstairs01 -- chmosh:mosh_stagei:306 -- stagei_wt_surf for different marker types body = 10000.00
+423 -- downstairs01 -- chmosh:mosh_stagei:358 -- Init. loss values: beta = 7.83e+01 | data = 2.26e+03 | init_body = 6.44e+02 | init_head_corr = 1.63e+01 | poseB = 6.53e+02 | surf_body = 1.14e+00
+423 -- downstairs01 -- chmosh:mosh_stagei:366 -- Final loss values: beta = 1.22e+02 | data = 1.75e+02 | init_body = 8.18e+02 | init_head_corr = 3.14e+01 | poseB = 6.94e+02 | surf_body = 1.61e+00
+423 -- downstairs01 -- chmosh:mosh_stagei:302 -- Step 4/4 : Opt. wt_anneal_factor = 0.12, wt_data = 0.12, wt_poseB = 575.00
+423 -- downstairs01 -- chmosh:mosh_stagei:304 -- stagei_wt_init for different marker types body = 37.50: 
+423 -- downstairs01 -- chmosh:mosh_stagei:306 -- stagei_wt_surf for different marker types body = 10000.00
+423 -- downstairs01 -- chmosh:mosh_stagei:358 -- Init. loss values: beta = 3.06e+01 | data = 7.01e+02 | init_body = 2.05e+02 | init_head_corr = 7.86e+00 | poseB = 1.73e+02 | surf_body = 1.61e+00
+423 -- downstairs01 -- chmosh:mosh_stagei:366 -- Final loss values: beta = 3.08e+01 | data = 5.79e+02 | init_body = 2.07e+02 | init_head_corr = 8.08e+00 | poseB = 1.74e+02 | surf_body = 1.92e+01
+423 -- downstairs01 -- mosh_head:mosh_stagei:215 -- created stagei_fname: /ps/scratch/soma/single_labeled_frame/KIT/423/moshpp_smplx/downstairs01_stagei.pkl
+423 -- downstairs01 -- mosh_head:mosh_stagei:217 -- finished mosh stagei in 0:24:21.058141
+423 -- downstairs01 -- edit_tools:merge_marker_layouts:194 -- Merging #1 marker layouts: ['/ps/scratch/soma/single_labeled_frame/KIT/423/downstairs01_smplx_finetuned.json'].
+423 -- downstairs01 -- soma_data_module:prepare_training_superset:45 -- Created superset at: /ps/scratch/soma/data/V45_01_KIT/marker_dataset/V45_01_KIT_superset.json
+423 -- downstairs01 -- soma_data_module:__init__:79 -- Created /ps/scratch/soma/data/V45_01_KIT/marker_dataset/V45_01_KIT_superset.ply
+423 -- downstairs01 -- soma_data_module:__init__:104 -- num_points (51) = num_ghost_max (3) * num_body_parts (1) + num_prop_marker_max (0) + num_superset_labels (48) 
+423 -- downstairs01 -- prepare_synthetic_body_data:prepare_synthetic_body_dataset:76 -- Synthetic body dataset already exists at /ps/project/soma/support_files/release_soma/smplx/SOMA_ICCV_Body_Parameters/V43_13_HDM05/body_dataset
+423 -- downstairs01 -- prepare_synthetic_marker_data:prepare_marker_dataset:378 -- Created a git archive backup at /ps/scratch/soma/data/V45_01_KIT/marker_dataset/code/supercap_2021_07_07_17_34_01.tar.gz
+423 -- downstairs01 -- prepare_synthetic_marker_data:prepare_marker_dataset:390 -- Creating marker dataset with superset /ps/scratch/soma/data/V45_01_KIT/marker_dataset/V45_01_KIT_superset.json which has 48 markers.
+423 -- downstairs01 -- prepare_synthetic_marker_data:prepare_marker_dataset:392 -- Superset marker type distance {'body': 0.0095} meters.
+423 -- downstairs01 -- prepare_synthetic_marker_data:prepare_marker_dataset:394 -- Will place markers randomly on 1 ring neighbourhood of a vid.
+423 -- downstairs01 -- prepare_synthetic_marker_data:prepare_marker_dataset:405 -- Preparing data files for split vald
+423 -- downstairs01 -- prepare_synthetic_marker_data:prepare_marker_dataset:409 -- Preparing synthetic marker data for split vald from #137483 body parameters corresponding to datasets ['HumanEva', 'ACCAD', 'TotalCapture']
+423 -- downstairs01 -- prepare_synthetic_marker_data:prepare_marker_dataset:418 -- #137483 synthetic data points created
+423 -- downstairs01 -- prepare_synthetic_marker_data:prepare_marker_dataset:448 -- Not using real data for split vald since use_real_data_for (None) does not have this split name
+423 -- downstairs01 -- prepare_synthetic_marker_data:drop_dict_as_pt:325 -- Dumped 137483 data points as pytorch pt files at: /ps/scratch/soma/data/V45_01_KIT/marker_dataset/vald
+423 -- downstairs01 -- prepare_synthetic_marker_data:prepare_marker_dataset:405 -- Preparing data files for split train
+423 -- downstairs01 -- prepare_synthetic_marker_data:prepare_marker_dataset:409 -- Preparing synthetic marker data for split train from #1051439 body parameters corresponding to datasets ['CMU', 'Transitions_mocap', 'MPI_Limits', 'SMPLx_betas']
+423 -- downstairs01 -- prepare_synthetic_marker_data:prepare_marker_dataset:418 -- #1051439 synthetic data points created
+423 -- downstairs01 -- prepare_synthetic_marker_data:prepare_marker_dataset:448 -- Not using real data for split train since use_real_data_for (None) does not have this split name
+423 -- downstairs01 -- prepare_synthetic_marker_data:drop_dict_as_pt:325 -- Dumped 1051439 data points as pytorch pt files at: /ps/scratch/soma/data/V45_01_KIT/marker_dataset/train
+423 -- downstairs01 -- prepare_synthetic_marker_data:prepare_marker_dataset:485 -- marker_dataset_dir: /ps/scratch/soma/data/V45_01_KIT/marker_dataset
+423 -- downstairs01 -- prepare_amass_noise_model:prepare_amass_noise_model:121 -- Creating amass noise model for superset /ps/scratch/soma/data/V45_01_KIT/marker_dataset/V45_01_KIT_superset.json which has 48 markers
+423 -- downstairs01 -- prepare_amass_noise_model:prepare_amass_noise_model:144 -- Found #20 for split vald from ds_name HumanEva. used_babel=False
+423 -- downstairs01 -- prepare_amass_noise_model:prepare_amass_noise_model:144 -- Found #20 for split vald from ds_name ACCAD. used_babel=False
+423 -- downstairs01 -- prepare_amass_noise_model:prepare_amass_noise_model:144 -- Found #20 for split vald from ds_name TotalCapture. used_babel=False
+423 -- downstairs01 -- prepare_amass_noise_model:prepare_amass_noise_model:162 -- split_name vald: No sequence found for labels ['LAEL', 'LAOL', 'LBAK', 'LHPS', 'LHTS', 'LTIP', 'LWPS', 'LWTS', 'RAEL', 'RAOL', 'RHPS', 'RHTS', 'RTIP', 'RWPS', 'RWTS']
+423 -- downstairs01 -- prepare_amass_noise_model:prepare_amass_noise_model:186 -- Created AMASS noise model at: /ps/scratch/soma/data/V45_01_KIT/amass_noise/vald/amass_noise_model.npz
+423 -- downstairs01 -- prepare_amass_noise_model:prepare_amass_noise_model:144 -- Found #20 for split train from ds_name CMU. used_babel=False
+423 -- downstairs01 -- prepare_amass_noise_model:prepare_amass_noise_model:144 -- Found #20 for split train from ds_name Transitions_mocap. used_babel=False
+423 -- downstairs01 -- prepare_amass_noise_model:prepare_amass_noise_model:144 -- Found #20 for split train from ds_name MPI_Limits. used_babel=False
+423 -- downstairs01 -- prepare_amass_noise_model:prepare_amass_noise_model:186 -- Created AMASS noise model at: /ps/scratch/soma/data/V45_01_KIT/amass_noise/train/amass_noise_model.npz
+423 -- downstairs01 -- prepare_synthetic_mocap_data:__init__:46 -- Will produce augmented mocap point cloud data for split vald: num_ghost_max = 3, num_occ_max = 5, num_btraj_max = 0, marker_noise_var = 0.00e+00, use_model_based_marker_pos_noise = True
+423 -- downstairs01 -- prepare_synthetic_mocap_data:__init__:56 -- split_name = vald, limit_real_data = 0.0, limit_synt_data = 1.0
+423 -- downstairs01 -- prepare_synthetic_mocap_data:__init__:80 -- loaded dataset settings from ['/ps/scratch/soma/data/V45_01_KIT/marker_dataset/vald/../settings.yaml']
+423 -- downstairs01 -- prepare_synthetic_mocap_data:__init__:89 -- Split vald: Loaded #137483 data points from marker_dataset_dir /ps/scratch/soma/data/V45_01_KIT/marker_dataset/vald.
+423 -- downstairs01 -- prepare_synthetic_mocap_data:__init__:91 -- Split vald: #0 (0.00) real and #137483 (1.00) synthetic data points.
+423 -- downstairs01 -- prepare_synthetic_mocap_data:__init__:97 -- synthetic_body_amass_splits: ['HumanEva', 'ACCAD', 'TotalCapture']
+423 -- downstairs01 -- prepare_synthetic_mocap_data:__init__:118 -- Loading marker layout: /ps/scratch/soma/single_labeled_frame/KIT/423/downstairs01_smplx_finetuned.json
+423 -- downstairs01 -- prepare_synthetic_mocap_data:__init__:46 -- Will produce augmented mocap point cloud data for split train: num_ghost_max = 3, num_occ_max = 5, num_btraj_max = 0, marker_noise_var = 0.00e+00, use_model_based_marker_pos_noise = True
+423 -- downstairs01 -- prepare_synthetic_mocap_data:__init__:56 -- split_name = train, limit_real_data = 0.0, limit_synt_data = 1.0
+423 -- downstairs01 -- prepare_synthetic_mocap_data:__init__:65 -- Chosen 0.00 of real data point #0 of #0
+423 -- downstairs01 -- prepare_synthetic_mocap_data:__init__:80 -- loaded dataset settings from ['/ps/scratch/soma/data/V45_01_KIT/marker_dataset/train/../settings.yaml']
+423 -- downstairs01 -- prepare_synthetic_mocap_data:__init__:89 -- Split train: Loaded #1051439 data points from marker_dataset_dir /ps/scratch/soma/data/V45_01_KIT/marker_dataset/train.
+423 -- downstairs01 -- prepare_synthetic_mocap_data:__init__:91 -- Split train: #0 (0.00) real and #1051439 (1.00) synthetic data points.
+423 -- downstairs01 -- prepare_synthetic_mocap_data:__init__:97 -- synthetic_body_amass_splits: ['CMU', 'Transitions_mocap', 'MPI_Limits', 'SMPLx_betas']
+423 -- downstairs01 -- prepare_synthetic_mocap_data:__init__:118 -- Loading marker layout: /ps/scratch/soma/single_labeled_frame/KIT/423/downstairs01_smplx_finetuned.json
+423 -- downstairs01 -- soma_trainer:__init__:52 -- superset_fname: /ps/scratch/soma/data/V45_01_KIT/marker_dataset/V45_01_KIT_superset.json

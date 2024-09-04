@@ -1,0 +1,64 @@
+soma_subject1 -- clap_001 -- parallel_tools:run_parallel_jobs:54 -- #Job(s) submitted: 1
+soma_subject1 -- clap_001 -- mosh_head:__init__:80 -- mocap_fname: /home/nghorbani/Desktop/SOMA_Test/support_files/marker_layouts/SOMA/soma_subject1/clap_001.c3d
+soma_subject1 -- clap_001 -- mosh_head:__init__:82 -- stagei_fname: /home/nghorbani/Desktop/SOMA_Test/support_files/marker_layouts/SOMA/soma_subject1/moshpp_smplx/clap_001_stagei.pkl
+soma_subject1 -- clap_001 -- mosh_head:__init__:83 -- stageii_fname: None
+soma_subject1 -- clap_001 -- mosh_head:__init__:88 -- surface_model_type: smplx
+soma_subject1 -- clap_001 -- mosh_head:__init__:89 -- gender: neutral
+soma_subject1 -- clap_001 -- mosh_head:__init__:90 -- surface_model_fname: /ps/project/soma/support_files/release_soma/smplx/neutral/model.pkl
+soma_subject1 -- clap_001 -- mosh_head:__init__:93 -- optimize_fingers: False, optimize_face: False, optimize_toes: False, optimize_betas: True, optimize_dynamics: False
+soma_subject1 -- clap_001 -- mosh_head:prepare_stagei_frames:134 -- Selecting 12 frames using method manual on frames with 50% least_avail_markers
+soma_subject1 -- clap_001 -- mosh_head:prepare_stagei_frames:168 -- Using frames for stage-i: ['/home/nghorbani/Desktop/SOMA_Test/support_files/marker_layouts/SOMA/soma_subject1/clap_001.c3d_000000'
+ '/home/nghorbani/Desktop/SOMA_Test/support_files/marker_layouts/SOMA/soma_subject1/clap_001.c3d_000000'
+ '/home/nghorbani/Desktop/SOMA_Test/support_files/marker_layouts/SOMA/soma_subject1/clap_001.c3d_000000'
+ '/home/nghorbani/Desktop/SOMA_Test/support_files/marker_layouts/SOMA/soma_subject1/clap_001.c3d_000000'
+ '/home/nghorbani/Desktop/SOMA_Test/support_files/marker_layouts/SOMA/soma_subject1/clap_001.c3d_000000'
+ '/home/nghorbani/Desktop/SOMA_Test/support_files/marker_layouts/SOMA/soma_subject1/clap_001.c3d_000000'
+ '/home/nghorbani/Desktop/SOMA_Test/support_files/marker_layouts/SOMA/soma_subject1/clap_001.c3d_000000'
+ '/home/nghorbani/Desktop/SOMA_Test/support_files/marker_layouts/SOMA/soma_subject1/clap_001.c3d_000000'
+ '/home/nghorbani/Desktop/SOMA_Test/support_files/marker_layouts/SOMA/soma_subject1/clap_001.c3d_000000'
+ '/home/nghorbani/Desktop/SOMA_Test/support_files/marker_layouts/SOMA/soma_subject1/clap_001.c3d_000000'
+ '/home/nghorbani/Desktop/SOMA_Test/support_files/marker_layouts/SOMA/soma_subject1/clap_001.c3d_000000'
+ '/home/nghorbani/Desktop/SOMA_Test/support_files/marker_layouts/SOMA/soma_subject1/clap_001.c3d_000000']
+soma_subject1 -- clap_001 -- mosh_head:mosh_stagei:207 -- Attempting mosh stagei to create /home/nghorbani/Desktop/SOMA_Test/support_files/marker_layouts/SOMA/soma_subject1/moshpp_smplx/clap_001_stagei.pkl
+soma_subject1 -- clap_001 -- chmosh:mosh_stagei:118 -- using marker_layout_fname: /home/nghorbani/Desktop/SOMA_Test/support_files/marker_layouts/SOMA/soma_subject1/moshpp_smplx/clap_001.json
+soma_subject1 -- clap_001 -- chmosh:mosh_stagei:154 -- Estimating for #latent markers: 53
+soma_subject1 -- clap_001 -- chmosh:mosh_stagei:191 -- Number of  available markers in each stagei selected frames: (F00, 53), (F01, 53), (F02, 53), (F03, 53), (F04, 53), (F05, 53), (F06, 53), (F07, 53), (F08, 53), (F09, 53), (F10, 53), (F11, 53)
+soma_subject1 -- clap_001 -- chmosh:mosh_stagei:200 -- Rigidly aligning the body to the markers
+soma_subject1 -- clap_001 -- chmosh:mosh_stagei:224 -- MoSh stagei weights before annealing:
+stagei_wt_poseH: 3.0
+stagei_wt_poseF: 3.0
+stagei_wt_expr: 34.0
+stagei_wt_pose: 3.0
+stagei_wt_poseB: 3.0
+stagei_wt_init_finger_left: 400.0
+stagei_wt_init_finger_right: 400.0
+stagei_wt_betas: 10.0
+stagei_wt_init: 300
+stagei_wt_data: 75.0
+stagei_wt_surf: 10000.0
+stagei_wt_annealing: [1.0, 0.5, 0.25, 0.125]
+soma_subject1 -- clap_001 -- chmosh:mosh_stagei:228 -- head_marker_corr_fname is provided and is being loaded.
+soma_subject1 -- clap_001 -- chmosh:mosh_stagei:236 -- Taking into account the correlation of the head markers from head_marker_corr_fname = /ps/project/soma/support_files/release_soma/ssm_head_marker_corr.npz
+soma_subject1 -- clap_001 -- chmosh:mosh_stagei:242 -- Beginning mosh stagei with opt_settings.weights_type: smplx
+soma_subject1 -- clap_001 -- chmosh:mosh_stagei:307 -- Step 1/4 : Opt. wt_anneal_factor = 1.00, wt_data = 1.00, wt_poseB = 65.09
+soma_subject1 -- clap_001 -- chmosh:mosh_stagei:309 -- stagei_wt_init for different marker types body = 300.00: 
+soma_subject1 -- clap_001 -- chmosh:mosh_stagei:311 -- stagei_wt_surf for different marker types body = 10000.00
+soma_subject1 -- clap_001 -- chmosh:mosh_stagei:363 -- Init. loss values: beta = 0.00e+00 | data = 9.84e+05 | init_body = 1.79e-26 | init_head_corr = 2.73e-27 | poseB = 2.46e+04 | surf_body = 5.24e+01
+soma_subject1 -- clap_001 -- chmosh:mosh_stagei:371 -- Final loss values: beta = 1.67e+02 | data = 4.35e+03 | init_body = 1.98e+03 | init_head_corr = 2.95e+01 | poseB = 1.20e+04 | surf_body = 4.57e-01
+soma_subject1 -- clap_001 -- chmosh:mosh_stagei:307 -- Step 2/4 : Opt. wt_anneal_factor = 0.50, wt_data = 0.50, wt_poseB = 130.19
+soma_subject1 -- clap_001 -- chmosh:mosh_stagei:309 -- stagei_wt_init for different marker types body = 150.00: 
+soma_subject1 -- clap_001 -- chmosh:mosh_stagei:311 -- stagei_wt_surf for different marker types body = 10000.00
+soma_subject1 -- clap_001 -- chmosh:mosh_stagei:363 -- Init. loss values: beta = 4.18e+01 | data = 1.74e+04 | init_body = 4.96e+02 | init_head_corr = 7.37e+00 | poseB = 3.01e+03 | surf_body = 4.57e-01
+soma_subject1 -- clap_001 -- chmosh:mosh_stagei:371 -- Final loss values: beta = 1.58e+02 | data = 1.08e+03 | init_body = 3.05e+03 | init_head_corr = 1.39e+02 | poseB = 3.18e+03 | surf_body = 1.26e+00
+soma_subject1 -- clap_001 -- chmosh:mosh_stagei:307 -- Step 3/4 : Opt. wt_anneal_factor = 0.25, wt_data = 0.25, wt_poseB = 260.38
+soma_subject1 -- clap_001 -- chmosh:mosh_stagei:309 -- stagei_wt_init for different marker types body = 75.00: 
+soma_subject1 -- clap_001 -- chmosh:mosh_stagei:311 -- stagei_wt_surf for different marker types body = 10000.00
+soma_subject1 -- clap_001 -- chmosh:mosh_stagei:363 -- Init. loss values: beta = 3.94e+01 | data = 4.34e+03 | init_body = 7.63e+02 | init_head_corr = 3.49e+01 | poseB = 7.95e+02 | surf_body = 1.26e+00
+soma_subject1 -- clap_001 -- chmosh:mosh_stagei:371 -- Final loss values: beta = 9.06e+01 | data = 1.98e+03 | init_body = 8.92e+02 | init_head_corr = 5.39e+01 | poseB = 8.22e+02 | surf_body = 1.24e+01
+soma_subject1 -- clap_001 -- chmosh:mosh_stagei:307 -- Step 4/4 : Opt. wt_anneal_factor = 0.12, wt_data = 0.12, wt_poseB = 520.75
+soma_subject1 -- clap_001 -- chmosh:mosh_stagei:309 -- stagei_wt_init for different marker types body = 37.50: 
+soma_subject1 -- clap_001 -- chmosh:mosh_stagei:311 -- stagei_wt_surf for different marker types body = 10000.00
+soma_subject1 -- clap_001 -- chmosh:mosh_stagei:363 -- Init. loss values: beta = 2.27e+01 | data = 7.92e+03 | init_body = 2.23e+02 | init_head_corr = 1.35e+01 | poseB = 2.06e+02 | surf_body = 1.24e+01
+soma_subject1 -- clap_001 -- chmosh:mosh_stagei:371 -- Final loss values: beta = 2.27e+01 | data = 7.90e+03 | init_body = 2.23e+02 | init_head_corr = 1.35e+01 | poseB = 2.06e+02 | surf_body = 1.39e+01
+soma_subject1 -- clap_001 -- mosh_head:mosh_stagei:223 -- created stagei_fname: /home/nghorbani/Desktop/SOMA_Test/support_files/marker_layouts/SOMA/soma_subject1/moshpp_smplx/clap_001_stagei.pkl
+soma_subject1 -- clap_001 -- mosh_head:mosh_stagei:225 -- finished mosh stagei in 0:20:39.572295

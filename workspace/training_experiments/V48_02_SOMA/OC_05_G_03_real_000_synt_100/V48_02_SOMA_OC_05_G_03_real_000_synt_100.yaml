@@ -1,0 +1,146 @@
+surface_model:
+  num_betas: 10
+  num_expressions: 80
+  gender: neutral
+  type: smplx
+  fname: ${dirs.support_base_dir}/${surface_model.type}/${surface_model.gender}/model.npz
+soma:
+  expr_id: V48_02_SOMA
+  data_id: ${resolve_soma_data_id:${data_parms.mocap_dataset.num_occ_max},${data_parms.mocap_dataset.num_ghost_max},${data_parms.mocap_dataset.limit_real_data},${data_parms.mocap_dataset.limit_synt_data}}
+dirs:
+  work_base_dir: /home/ubuntu/Desktop/test/workspace
+  support_base_dir: /home/ubuntu/Desktop/test/workspace/support_files
+  work_dir: ${dirs.work_base_dir}/training_experiments/${soma.expr_id}/${soma.data_id}
+  log_dir: ${dirs.work_dir}/logs
+  log_fname: ${dirs.log_dir}/${soma.expr_id}_${soma.data_id}.log
+  cfg_fname: ${dirs.work_dir}/${soma.expr_id}_${soma.data_id}.yaml
+  dataset_dir: ${dirs.work_base_dir}/data/${soma.expr_id}
+  body_dataset_dir: ${dirs.dataset_dir}/body_dataset
+  marker_dataset_dir: ${dirs.dataset_dir}/marker_dataset
+  amass_dir: ${dirs.support_base_dir}/${surface_model.type}/amass_neutral
+  amass_marker_noise_dir: ${dirs.dataset_dir}/amass_marker_noise
+train_parms:
+  batch_size: 256
+  num_workers: 4
+  loss_weights:
+    labeling: 1.0
+    body_part_mask: 0.1
+  gen_optimizer:
+    type: Adam
+    args:
+      lr: 0.001
+      weight_decay: 5.0e-05
+      betas:
+      - 0.9
+      - 0.999
+  lr_scheduler:
+    type: ReduceLROnPlateau
+    args:
+      verbose: true
+      patience: 3
+  early_stopping:
+    monitor: val_loss
+    min_delta: 0.0
+    patience: 8
+    verbose: true
+    mode: min
+data_parms:
+  amass_splits:
+    vald:
+    - HumanEva
+    - ACCAD
+    - TotalCapture
+    train:
+    - CMU
+    - Transitions
+    - PosePrior
+  num_timeseq_frames: 1
+  num_frames_overlap: 0
+  unified_frame_rate: 30
+  body_dataset:
+    rnd_zrot: true
+    animate_face: false
+    animate_hand: false
+    num_hand_var_perseq: 15
+    augment_by_temporal_inversion: false
+  marker_dataset:
+    superset_fname: ${dirs.marker_dataset_dir}/superset.json
+    use_real_data_from: null
+    use_real_data_for: null
+    use_synt_data_for:
+    - train
+    - vald
+    wrist_markers_on_stick: false
+    num_random_vid_ring: 1
+    num_marker_layout_augmentation: 1
+    enable_rnd_vid_on_face_hands: false
+    props:
+      enable: false
+      num_prop_marker_max: null
+      static: null
+      unit: mm
+      rotate:
+      - 90
+      - 0
+      - 0
+  mocap_dataset:
+    marker_layout_fnames:
+    - /home/ubuntu/Desktop/test/workspace/support_files/marker_layouts/SOMA/soma_subject1/clap_001_smplx_finetuned.json
+    ghost_distribution: spherical_gaussian
+    num_occ_max: 5
+    num_ghost_max: 3
+    limit_real_data: 0.0
+    limit_synt_data: 1.0
+    marker_noise_var: 0
+    amass_marker_noise_model:
+      enable: false
+      amass_splits:
+        vald:
+        - HumanEva
+        - ACCAD
+        - TotalCapture
+        train:
+        - CMU
+        - Transitions
+        - PosePrior
+model_parms:
+  labeler:
+    enable_transformer: true
+    enable_sinkhorn: true
+    num_sinkhorn_iters: 35
+    num_attention_heads: 5
+    num_attention_layers: 8
+    num_pooler_feat: 256
+    num_total_attention_feat: 125
+    body_parts:
+    - body
+trainer:
+  num_gpus: 1
+  max_epochs: 50
+  fast_dev_run: true
+  strategy: dp
+  resume_training_if_possible: false
+  resume_checkpoint_fname: null
+  finetune_checkpoint_fname: null
+  weights_summary: top
+  profiler: null
+  num_sanity_val_steps: 2
+  deterministic: false
+  limit_train_batches: 1.0
+  limit_val_batches: 1.0
+  overfit_batches: 0
+  rnd_seed: 100
+moshpp_cfg_override:
+  mocap:
+    unit: mm
+  surface_model:
+    gender: ${surface_model.gender}
+    type: ${surface_model.type}
+  opt_settings:
+    weights_type: ${surface_model.type}
+  moshpp:
+    verbosity: 1
+    separate_types:
+    - body
+  dirs:
+    support_base_dir: /home/ubuntu/Desktop/test/workspace/support_files
