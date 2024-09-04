@@ -1,0 +1,11 @@
+# *.mp4
+
+workspace/data
+workspace/blender_temp
+workspace/support_files/smplx
+
+workspace/training_experiments/V48_02_SOMA/OC_05_G_03_real_000_synt_100/evaluations/soma_labeled_mocap_tracklet/SOMA_unlabeled_mpc
+
+workspace/training_experiments/V48_02_SOMA/OC_05_G_03_real_000_synt_100/logs
+
+*ckpt
